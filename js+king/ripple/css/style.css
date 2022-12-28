@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* to center a div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aliceblue;
+  transition: 0.5s;
+  font-family: sans-serif;
+}
+
+.btn {
+  background-color: pink;
+  padding: 20px 40px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 09);
+  text-decoration: none;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  background-color: rgb(180, 245, 0);
+  width: 0px;
+  height: 0px;
+  /* use this for centering center  */
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.3s, height 0.4s;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover {
+  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* 
+
+body {
+  background-color: black;
+  animation: image 15s infinite alternate;
+}
+
+@keyframes image {
+  0% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+*/
