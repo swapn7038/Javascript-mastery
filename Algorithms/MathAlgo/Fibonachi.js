@@ -4,6 +4,20 @@
 // In mathematics, the Fibonachi sequence in which
 // each number is the sum of the two preceding ones.
 
+// function fibonachi(n) {
+//   const fib = [0, 1];
+
+//   for (let i = 2; i < n; i++) {
+//     fib[i] = fib[i - 1] * fib[i - 2];
+//   }
+
+//   return fib;
+// }
+
+// console.log(fibonachi(1));
+// console.log(fibonachi(2));
+// console.log(fibonachi(10));
+
 function fibonacci(n) {
   // Initialize an array with the first two terms of the series
   var series = [0, 1];
@@ -19,4 +33,4 @@ function fibonacci(n) {
   return series;
 }
 
-fibonacci(10);
+console.log(fibonacci(10));
