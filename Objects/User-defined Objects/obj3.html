@@ -1,0 +1,45 @@
+<!-- Example illustrates opening a new window when a link on a web page is clicked. 
+The new window opened, is closed by placing a button on the new window and writing Js code in the 
+onClick event of the button.  -->
+
+<html>
+  <head>
+    <script>
+      function makeNewWindow() {
+        var newwindow = prompt(
+          "Enter the document to go to in format http://url.com",
+          ""
+        );
+        if (!(newwindow == null || newwindow == "")) {
+          window.open(
+            newwindow,
+            "",
+            "status, menubar = yes, resizable=no, toolbar=no"
+          );
+        } else {
+          var blankwindow = window.open(
+            "",
+            "",
+            "status, menubar=yes, resizable=no, toolbar-no"
+          );
+          var windowcontent = "<html> </html>";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <form action="">
+      <input
+        type="button"
+        name="open"
+        onclick="makeNewWindow()"
+        value="Open URL"
+      />
+    </form>
+
+    <script>
+      //
+    </script>
+  </body>
+</html>

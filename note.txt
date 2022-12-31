@@ -1,2 +1,5 @@
 Take pen and paper and write down the function
 and logic 
+
+I can write these things in website format, and create new website. Where all this content will Be visible
+and user can read and write code.

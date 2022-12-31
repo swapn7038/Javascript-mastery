@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating and using user defined function</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+
+    <script>
+      var name = "";
+      function hello() {
+        name = prompt("Enter your name" + name);
+        alert("Greetings " + name + " , Welcome to my page!");
+      }
+
+      function goodbye() {
+        alert("Goodbye" + name + "Sorry to see you go!");
+      }
+    </script>
+  </head>
+  <body onload="hello();" onunload="goodbye();">
+    <img src="./image-6.jpg" alt="" />
+  </body>
+</html>

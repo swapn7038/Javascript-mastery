@@ -1,0 +1,50 @@
+<!-- Count the number of elements in a Form's, elements array.  -->
+<!-- Check the number returned against the no. of form elements against the number of form elementd described between the <form></form> tags in the html page that is running is the Browser.  -->
+<!-- Recognize that the number of elements in the elements array match the number of elements described between the form tags in the HTML page exactly -->
+<!--  -->
+
+<html>
+  <head>
+    <title>Fomr || Js</title>
+    <script>
+      //
+
+      function Ver(form1) {
+        v = form1.elements.length;
+        if (form1.elements[3].name == "Button1") {
+          alert("First form name: " + document.forms[0].name);
+          alert("No. of Forms elements of " + document.forms[0].name + "=" + v);
+        } else if (form1.elements[4].name == "Button2") {
+          alert("Second form name: " + document.forms[1].name);
+          alert("No. of Forms elements of " + document.forms[1].name + "=" + v);
+        }
+
+        for (i = 0; i < v; i++)
+          alert(forms1.elements[i].name + "is at position " + i);
+      }
+    </script>
+  </head>
+  <body>
+    <form name="Survey Form 1">
+      First Form : <i><b>Survey Form 1</b></i> <br /><br />
+      First Name :
+      <input type="text" name="text1" value="" />
+      <br /><br />
+
+      <input type="Radio" name="Radio1" value="" /> Fresher
+      <input type="Radio" name="Radio2" value="" /> Experienced <br /><br />
+      <input type="Button" name="Button1" onclick="Ver(form)" value="Click1" />
+    </form>
+
+    <form name="Survey Form 2">
+      Second Form : <i><b>Survey Form 2</b></i> <br /><br />
+      First Name :
+      <input type="text" name="text1" value="" />
+      <br /><br />
+
+      <input type="Radio" name="Radio1" value="" /> Fresher
+      <input type="Radio" name="Radio2" value="" /> Experienced <br /><br />
+      <input type="Button" name="Button2" onclick="Ver(form)" value="Click2" />
+    </form>
+  </body>
+</html>

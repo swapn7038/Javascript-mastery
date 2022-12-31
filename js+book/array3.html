@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      /* css */
+    </style>
+
+    <!-- title -->
+    <title>Elements of an array</title>
+  </head>
+
+  <body>
+    <script>
+      // js
+
+      // Js does not place any restrictions on the values assigned to the elements of an array.
+      // These values could be of different types or could refer to other arrays or objects.
+
+      multiTypeArray = new Array(
+        "Swapnil",
+        "Shelke",
+        44,
+        431136,
+        true,
+        false,
+        null,
+        new Array(100, 10)
+      );
+
+      // this array has length of 8
+      multiTypeArray[7] = new Array(100, 10);
+      // this is new dense array consisting of the values 100, 10
+
+      // We can access two elements of this array using second set of subscripts:
+      num1 = multiTypeArray[7][0];
+      num2 = multiTypeArray[7][1];
+
+      document.write(num1, "<Br>", num2);
+
+      // To access the length of an array
+      arrayLength = multiTypeArray.length;
+      document.write("<br>", arrayLength);
+    </script>
+  </body>
+</html>
