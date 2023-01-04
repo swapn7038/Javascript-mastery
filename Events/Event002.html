@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>windowX</h1>
+
+    <button onclick="changeColor()">Click to change BG color</button>
+
+    <script>
+      function coordinate() {
+        var x = window.open("", "myWindio");
+        x.document.write("<p>Welcome to my Window");
+        x.document.write("<br> X Coordinate : " + x.screenX + "</p>");
+
+        // console.log(5 + 5);
+        if (x.screenX < 500) {
+          document.body.style.backgroundColor = "#ddd";
+        }
+      }
+    </script>
+  </body>
+</html>

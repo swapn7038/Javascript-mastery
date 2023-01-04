@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Practice windowX event</h1>
+    <h2>Window screenX Property</h2>
+
+    <p>
+      For returning the x coordinates of a window relative to the screen, double
+      click the "Check X coordinates" button
+    </p>
+
+    <button ondblclick="coordinate()">Check X Coordinate</button>
+
+    <script>
+      function coordinate() {
+        var x = window.open("", "myWindio");
+        x.document.write("<p>Welcome to my Window");
+        x.document.write("<br> X Coordinate : " + x.screenX + "</p>");
+
+        // console.log(5 + 5);
+        if (x.screenX < 500) {
+          document.body.style.backgroundColor = "#ddd";
+        }
+      }
+    </script>
+  </body>
+</html>
