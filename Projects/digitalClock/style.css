@@ -47,7 +47,7 @@ h2 {
 }
 
 .clock div {
-  margin: 5px 0 12rem;
+  margin: 5px;
   position: relative;
 }
 
@@ -80,4 +80,14 @@ h2 {
   font-size: 2rem;
   /* border: 3px solid ; */
   /* background: linear-gradient(rgb(208, 196, 196), rgb(112, 108, 108)); */
+}
+
+@media (max-width: 445px) {
+  .clock {
+    display: flex;
+    flex-direction: column;
+  }
+  .clock div {
+    position: relative;
+  }
 }
