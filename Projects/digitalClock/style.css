@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  /* above code is to just center a div */
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(109, 106, 106)
+  );
+  /* above code gives background color */
+  font-family: sans-serif;
+  transition: 0.4s;
+  background: url("../digitalClock/assets/image-5.jpg") center center;
+  background-size: cover;
+  /* align-items: center;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;*/
+  /* border: 3px orange solid;  */
+
+  /* display: grid;
+  place-items: center;
+  height: 100vh; */
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+  /* border: 2px solid ; */
+  /* flex-direction: column; */
+}
+
+.clock div {
+  margin: 5px 0 12rem;
+  position: relative;
+}
+
+.clock span {
+  width: 5rem;
+  height: 4rem;
+  /*  */
+  background-color: transparent;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  /* color: rgb(0, 0, 0); */
+  /* border: 3px solid; */
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  color: rgb(0, 0, 0);
+}
+
+.clock #ampm {
+  position: absolute;
+  font-size: 2rem;
+  /* border: 3px solid ; */
+  /* background: linear-gradient(rgb(208, 196, 196), rgb(112, 108, 108)); */
+}
