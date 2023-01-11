@@ -15,4 +15,17 @@
 
 1. Replace occurence of a string.
 
+### Video's watched
+
+1. cwh
+2. Fireship
+3. The Net Ninja
+
+### Website used
+
+https://regex101.com/
+
+### Playlist
+
+https://www.youtube.com/watch?v=C_HTKPvXjEc&list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD&index=4
 ![alt text](images/regex.png)
