@@ -42,8 +42,6 @@ h2 {
 
 .clock {
   display: flex;
-  /* border: 2px solid ; */
-  /* flex-direction: column; */
 }
 
 .clock div {
