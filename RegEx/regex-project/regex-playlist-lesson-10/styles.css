@@ -1,24 +1,62 @@
-body{
-    font-family: arial;
-    color: #333;
+body {
+  font-family: arial;
+  color: #333;
 }
-h1{
-    font-weight: normal;
-    margin: 20px auto;
-    text-align: center;
+h1 {
+  font-weight: normal;
+  margin: 20px auto;
+  text-align: center;
 }
-form{
-    width: 500px;
-    margin: 20px auto;
+form {
+  width: 500px;
+  margin: 20px auto;
 }
-input{
-    display: block;
-    padding: 8px 16px;
-    font-size: 2em;
-    margin: 10px auto;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 3px solid #ccc;
-    outline: none !important;
+input {
+  display: block;
+  padding: 8px 16px;
+  font-size: 2em;
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  outline: none !important;
+  transition: 0.3s;
 }
+
+/* Course css */
+
+/* validation style */
+
+input.valid {
+  border-color: #36cc36;
+}
+
+input.invalid {
+  border-color: orange;
+}
+
+input + p {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  color: orange;
+  opacity: 0;
+  height: 0;
+}
+
+input.invalid + p {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 4px;
+}
+
+/* My css */
+
+/* .invalid {
+  border: 3px solid red;
+}
+.valid {
+  border: 3px solid rgb(0, 255, 85);
+} */
