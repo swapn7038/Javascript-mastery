@@ -11,6 +11,24 @@
 
 6. Regular expressions allow us to check these kinds of things.
 
+## Metacharacter's
+
+- \d
+- \w
+- \s
+- \t
+- \d
+
+## Special Characters
+
+- '+'
+- '\'
+- '[]'
+- '[^]'
+- '?'
+- '.'
+- '\*'
+
 ### Interview question
 
 1. Replace occurence of a string.
@@ -28,4 +46,5 @@ https://regex101.com/
 ### Playlist
 
 https://www.youtube.com/watch?v=C_HTKPvXjEc&list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD&index=4
+
 ![alt text](images/regex.png)
