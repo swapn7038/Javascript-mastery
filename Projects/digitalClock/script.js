@@ -42,7 +42,6 @@ window.onload = function () {
     "../digitalClock/assets/image-2.jpg",
     "../digitalClock/assets/image-3.jpg",
     "../digitalClock/assets/image-4.jpg",
-    "../digitalClock/assets/image-5.jpg",
     "../digitalClock/assets/image-6.jpg",
     "../digitalClock/assets/image-7.jpg",
   ];

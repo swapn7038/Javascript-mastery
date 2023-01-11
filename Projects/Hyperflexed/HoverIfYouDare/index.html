@@ -1,0 +1,118 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: black;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+  }
+  p,
+  a {
+    color: white;
+    font-size: 8vw;
+    font-family: sans-serif;
+    margin: 0rem;
+    text-transform: uppercase;
+  }
+
+  #text {
+    /* border: 4px solid rgb(255, 255, 255); */
+    width: 100%;
+  }
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #text:has(.fancy:hover) .word:not(.fancy) {
+    opacity: 0.2;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .fancy > .letter {
+    display: inline-block;
+    transition: transform 350ms ease;
+    border: 2px solid white;
+  }
+
+  .fancy:hover > .letter {
+    transition-duration: 800ms;
+  }
+
+  .fancy:hover > .letter:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(8deg);
+  }
+
+  .fancy:hover > .letter:nth-child(2) {
+    transform: translate(-50%, 30%) rotate(4deg);
+  }
+
+  .fancy:hover > .letter:nth-child(3) {
+    transform: translate(-90%, 30%) rotate(4deg);
+  }
+
+  .fancy:hover > .letter:nth-child(4) {
+    transform: translate(-40%, 30%) rotate(4deg);
+  }
+
+  .fancy:hover > .letter:nth-child(5) {
+    transform: translate(-10%, 30%) rotate(4deg);
+  }
+
+  .fancy:hover > .letter:nth-child(6) {
+    transform: translate(-80%, 30%) rotate(4deg);
+  }
+
+  .fancy:hover > .letter:nth-child(7) {
+    transform: translate(-70%, 30%) rotate(4deg);
+  }
+
+  .fancy:hover > .letter:nth-child(8) {
+    transform: translate(-100%, 30%) rotate(4deg);
+  }
+</style>
+
+<body>
+  <div id="text">
+    <div class="line">
+      <p class="word">A &nbsp;</p>
+      <p class="word">Web-Developer</p>
+    </div>
+    <div class="line">
+      <p class="word">and a &nbsp;</p>
+      <p class="word">Youtuber</p>
+    </div>
+    <div class="line">
+      <a id="channel-link" target="_blank" href="#" class="word fancy"
+        >@ Swapy.dev</a
+      >
+    </div>
+  </div>
+
+  <script>
+    const enhance = (id) => {
+      const element = document.getElementById(id),
+        text = document.innerText.split("");
+
+      element.innerText = "";
+
+      text.forEach((letter) => {
+        const span = document.createElement("span");
+
+        span.className = "letter";
+        span.innerText = letter;
+        element.appendClild(span);
+      });
+    };
+
+    enhanced("channel-link");
+  </script>
+</body>
