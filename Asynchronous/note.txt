@@ -1,0 +1,5 @@
+Learn about asynchronous programming 
+ Resources 
+   Eloquent JS 
+   Freecodecamp
+   
