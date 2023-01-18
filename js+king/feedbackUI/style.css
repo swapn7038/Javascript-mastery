@@ -46,6 +46,8 @@ body {
   padding: 10px;
   margin: 10px 5px;
 }
+
+.rating.active,
 .rating:hover {
   background: darkseagreen;
   border-radius: 0.7rem;
@@ -70,6 +72,10 @@ body {
 .btn:active {
   transform: scale(0.96);
 }
+
+/* .rating.active {
+  background: darkcyan;
+} */
 
 .btn:hover {
   background-color: transparent;
