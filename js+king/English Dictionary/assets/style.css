@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  width: 90%;
+  margin: 1rem;
+  max-width: 450px;
+  border-radius: 0.5rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.input {
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px rgba(0, 0, 0, 0.3) solid;
+  /* padding: 0.1rem 42px; */
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+
+.meaning-container {
+  display: none;
+}
