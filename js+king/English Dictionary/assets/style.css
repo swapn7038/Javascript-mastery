@@ -39,3 +39,7 @@ body {
 .meaning-container {
   display: none;
 }
+
+#info-text {
+  font-family: sans-serif;
+}
