@@ -46,6 +46,7 @@ async function fetchAPI(word) {
   }
 }
 
+
 inputEl.addEventListener("keyup", (e) => {
   //   console.log(e.target.value);
   if (e.target.value && e.key === "Enter") {
