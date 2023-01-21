@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to left bottom, lightblue, lightgreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  color: darkcyan;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  width: 85%;
+  max-width: 450px;
+  min-width: 350px;
+  /*  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.temp-container {
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.input {
+  width: 70%;
+  padding: 5px;
+  font-family: monospace;
+  float: right;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: darkgray;
+  font-size: 1.2rem;
+}
+
+.input::placeholder {
+  color: darkgray;
+}
+
+/* flexbox  */
