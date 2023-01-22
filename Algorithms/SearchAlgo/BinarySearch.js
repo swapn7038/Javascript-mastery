@@ -23,7 +23,7 @@ function binarySearch(arr, target) {
 }
 
 console.log(binarySearch([-5, 2, 10, 4, 6], 10));
-console.log(binarySearch([-5, 2, 10, 4, 6], 6));
+console.log(binarySearch([-5, 2, 10, 4, 6], -5));
 console.log(binarySearch([-5, 2, 10, 4, 6], 20));
 
 // Take a pen and paper, and write function execution for

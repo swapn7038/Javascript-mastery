@@ -18,7 +18,7 @@ and Kruskal Algorithm
 3. Divide and Conquer Ex : Binary Search, Quick Sort, 
  Merge Sort, Tower Of Hanoi 
 
- 4. Dynamic Programming ( Memoization ) Ex : Fibonachi, climbing staircase
+4. Dynamic Programming ( Memoization ) Ex : Fibonachi, climbing staircase
 
  5. Backtracking Ex: N-Queens problems 
 
