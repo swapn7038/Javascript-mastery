@@ -49,4 +49,9 @@ Event object is the parent object of the event object.
 
 ex : MouseEvent, focusEvent, keyboardEvent etc.
 
-10:05:00
+Section 3 => MouseEvents in Js
+The mouseEvent Object
+Events that occur when the mouse interacts with the html document belongs to the MouseEvent Object.
+
+Section 4 => KeyboardEvent in Js
+Events that occur when user presses a key on the keyboard, belongs to KeyboardEvent Object.
