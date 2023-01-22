@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+      }
+      .main-div {
+        height: 400px;
+        width: 400px;
+        display: grid;
+        place-content: center;
+        border: 3px solid;
+        background-color: antiquewhite;
+      }
+
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <div id="box"></div>
+    </div>
+
+    <script>
+      const myEnter = document.getElementById("box");
+
+      myEnter.addEventListener("mouseenter", () => {
+        myEnter.style.backgroundColor = "red";
+        console.log("Mouse Enter Bro");
+      });
+
+      myEnter.addEventListener("mouseleave", () => {
+        console.log("Mouse Enter Bro");
+        myEnter.style.backgroundColor = "pink";
+      });
+    </script>
+  </body>
+</html>

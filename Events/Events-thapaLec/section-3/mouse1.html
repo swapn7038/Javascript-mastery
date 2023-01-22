@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(64, 59, 59);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magni?
+    </p>
+
+    <script>
+      function mouseDown() {
+        document.getElementById("myP").style.color = "#f8b625";
+      }
+
+      function mouseUp() {
+        document.getElementById("myP").style.color = "#fff";
+      }
+    </script>
+  </body>
+</html>

@@ -55,3 +55,8 @@ Events that occur when the mouse interacts with the html document belongs to the
 
 Section 4 => KeyboardEvent in Js
 Events that occur when user presses a key on the keyboard, belongs to KeyboardEvent Object.
+
+Section 5 => InputEvents in Js
+The onchange event ossurs when the value of an element has been changed.
+
+For radiobuttons and checkboxes, the onchange event occurs when the checked state has been changed.
