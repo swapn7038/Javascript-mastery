@@ -1,13 +1,21 @@
 const btnEl = document.getElementById("btn");
+const appEl = document.getElementById("app");
 
 btnEl.addEventListener("click", addNote);
 
 function addNote() {
+  const notes = getNotes();
+  //   const notes = [];
   const noteObj = {
     id: Math.floor(Math.random() * 100000),
     content: "",
   };
   const noteEl = createNoteEl(noteObj.id, noteObj.content);
+  appEl.insertBefore(noteEl, btnEl);
+
+  notes.push(noteObj);
+
+  saveNote(notes);
 }
 
 function createNoteEl(id, content) {
@@ -26,11 +34,21 @@ function createNoteEl(id, content) {
   element.addEventListener("input", () => {
     updateNote(id, element.value);
   });
+
+  return element;
 }
 
 function deleteNote() {}
 
 function updateNote() {}
+
+function saveNote(notes) {
+  localStorage.setItem("note-app", JSON.stringify(notes));
+}
+
+function getNotes() {
+  JSON.parse(localStorage.getItem("note-app") || "[]");
+}
 
 // ============================ Rough Code ============================
 
