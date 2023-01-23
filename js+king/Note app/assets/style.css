@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-color: aliceblue;
+  --pure: white;
+  --bgColor: #616161;
+  --dark: black;
+  --btnHover: rgb(130, 125, 125);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bgColor);
+  transition: 0.4s;
+  font-family: "Courier New", Courier, monospace;
+  /* animation: bgAnimation 10s linear infinite forwards; */
+}
+
+.heading {
+  color: var(--heading-color);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 2rem;
+}
+
+.info-text {
+  text-align: center;
+  color: var(--heading-color);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  /* mask-border: ; */
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 40px;
+  place-content: center;
+  padding: 50px;
+}
+
+.note {
+  padding: 17px;
+  border-radius: 1rem;
+  resize: none;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  height: 200px;
+  color: var(--heading-color);
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+}
+
+.note::placeholder {
+  color: var(--pure);
+  opacity: 50%;
+}
+
+.note:hover,
+.note:focus {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  height: 200px;
+  border-color: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 1rem;
+  font-size: 7rem;
+  color: var(--heading-color);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: var(--btnHover);
+  color: var(--heading-color);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* @keyframes bgAnimation {
+  0% {
+    background: linear-gradient(
+      to left,
+      rgb(228, 180, 153),
+      rgb(144, 232, 238),
+      rgb(235, 112, 237)
+    );
+    opacity: 0;
+  }
+  25% {
+    background: linear-gradient(
+      to left,
+      rgb(0, 255, 225),
+      rgb(250, 175, 15),
+      rgb(67, 253, 0)
+    );
+  }
+  50% {
+    background: linear-gradient(
+      to left,
+      rgb(212, 179, 160),
+      rgb(84, 199, 207),
+      rgb(216, 114, 217)
+    );
+  }
+  75% {
+    background: linear-gradient(
+      to left,
+      rgb(255, 98, 7),
+      rgb(145, 239, 3),
+      rgb(217, 114, 114)
+    );
+  }
+  100% {
+    background: linear-gradient(
+      to left,
+      rgb(233, 166, 128),
+      rgb(119, 217, 224),
+      rgb(228, 84, 231)
+    );
+    opacity: 1;
+  }
+} */
