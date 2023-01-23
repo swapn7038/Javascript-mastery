@@ -4,11 +4,33 @@ btnEl.addEventListener("click", addNote);
 
 function addNote() {
   const noteObj = {
-    id: Math.floor(Math.random() * 1000000),
+    id: Math.floor(Math.random() * 100000),
     content: "",
   };
   const noteEl = createNoteEl(noteObj.id, noteObj.content);
 }
+
+function createNoteEl(id, content) {
+  const element = document.createElement("textarea");
+  element.classList.add("note");
+  element.placeholder = "Empty note";
+  element.value = content;
+
+  element.addEventListener("dblclick", () => {
+    const warning = confirm("Do you want to delete these note ?");
+    if (warning) {
+      deleteNote(id, element);
+    }
+  });
+
+  element.addEventListener("input", () => {
+    updateNote(id, element.value);
+  });
+}
+
+function deleteNote() {}
+
+function updateNote() {}
 
 // ============================ Rough Code ============================
 
