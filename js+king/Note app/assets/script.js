@@ -1,3 +1,17 @@
+const btnEl = document.getElementById("btn");
+
+btnEl.addEventListener("click", addNote);
+
+function addNote() {
+  const noteObj = {
+    id: Math.floor(Math.random() * 1000000),
+    content: "",
+  };
+  const noteEl = createNoteEl(noteObj.id, noteObj.content);
+}
+
+// ============================ Rough Code ============================
+
 // const btnEl = document.getElementById("btn");
 // const appEl = document.getElementById("app");
 
