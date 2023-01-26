@@ -19,3 +19,7 @@ https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/
 
 --- 25-01-23
 (Todays topic -> Ajax and cookies)
+(Browser+control -> Getting and Setting URL)
+
+--- 26-01-23
+(Todays toipc -> Finish all Browser Control) (seems easy)
