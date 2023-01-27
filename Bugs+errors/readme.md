@@ -5,7 +5,7 @@
 ### Chapter 8 : Bugs and Errors => Notes
 
 Bugs --> Flaws in computer programs
-Debugging --> provess of finding mistakes in program
+Debugging --> process of finding mistakes in program
 
 Strict Mode --> Make js little strict
 "use strict" at top of the file, or function body

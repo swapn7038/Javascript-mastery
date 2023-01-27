@@ -1,11 +1,11 @@
 # Forward and reverse
 
-history.back();
+`history.back();`
 
-history.forward();
+`history.forward();`
 
-history.go();
+`history.go();`
 
 To know from user came
 
-var whereUserComeFrom = document.referrer;
+`var whereUserComeFrom = document.referrer;`

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return checkForLastName();">
+      Enter your last name <br />
+      <input type="text" id="lastNameField" />
+      <input type="submit" value="Submit form" />
+    </form>
+    <script>
+      function checkForLastName() {
+        if (document.getElementById("lastNameField").value.length === 0) {
+          alert("Enter your last name");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

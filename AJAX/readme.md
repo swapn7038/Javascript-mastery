@@ -4,7 +4,8 @@
 
 => Very helpful in making modern websites.
 
-XML stands for -> As
+AJAX stands for -> Asynchronous Javascript and XML
 
 https://www.youtube.com/watch?v=FJZEVmF3eDg --> Ajax video.
-readme.ms What is this
+
+readme.ms What is this ?

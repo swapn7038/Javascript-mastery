@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="return checkForLastName();">
+      Enter your last name <br />
+      <input type="text" id="lastNameField" />
+      <input type="submit" value="Submit form" />
+    </form>
+    <script>
+      function checkForLastName() {
+        var targetField = document.getElementById("lastNameField");
+        if (targetField.value.length === 0) {
+          //   alert("Enter last name");
+          targetField.focus();
+          targetField.style.borderColor = "red";
+          return false;
+        }
+        targetField.style.borderColor = "green";
+      }
+    </script>
+  </body>
+</html>

@@ -23,3 +23,6 @@ https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/
 
 --- 26-01-23
 (Todays toipc -> Finish all Browser Control) (seems easy)
+
+--- 27-01-23
+(Todays topic -> DOM)

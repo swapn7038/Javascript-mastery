@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <style>
+      h1 {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Open window</h1>
+    <button id="btn">Open New Window</button>
+
+    <script>
+      const btnEl = document.getElementById("btn");
+
+      btnEl.addEventListener("click", () => {
+        var monkeyWindow = window.open(
+          "https://www.google.com",
+          "win1",
+          "width=500, height=400"
+        );
+      });
+    </script>
+  </body>
+</html>
