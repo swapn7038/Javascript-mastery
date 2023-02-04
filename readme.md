@@ -26,3 +26,6 @@ https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/
 
 --- 27-01-23
 (Todays topic -> DOM)
+
+---04-02-23
+(Todays topic -> Revision of Projects, Objects)
