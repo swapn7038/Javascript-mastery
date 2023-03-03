@@ -19,8 +19,8 @@ function changeBackground(color) {
 
 btnEl.addEventListener("mouseover", function () {
   changeBackground("rgba(0, 0, 0, 0.2)");
-  //   changeBackground("#AA0000");
-  //   changeBackground("#");
+  // changeBackground("#AA0000");
+    // changeBackground("#");
 });
 
 // original code
