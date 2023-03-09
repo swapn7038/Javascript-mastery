@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function display1() {
+        const x = document.getElementById("like");
+
+        x.src = "2.png";
+      }
+
+      function display2() {
+        const x = document.getElementById("like");
+
+        x.src = "1.png";
+      }
+    </script>
+  </head>
+  <body>
+    <img
+      id="like"
+      src="1.png"
+      onmouseenter="display1();"
+      onmouseleave="display2();"
+    />
+  </body>
+</html>

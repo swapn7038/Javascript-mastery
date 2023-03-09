@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="runCode()">Run Code</button>
+    <script>
+      function runCode() {
+        let newWin = window.open(
+          "about:blank",
+          "hello",
+          "width=200,height=200"
+        );
+        newWin.document.write(
+          "<script>window.opener.document.body.innerHTML = 'Test'<\/script>"
+        );
+      }
+    </script>
+  </body>
+</html>
